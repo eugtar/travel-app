@@ -7,10 +7,6 @@ import { TSafeUser } from "@/app/types";
 import ListingCategory from "./ListingCategory";
 import useCountries from "@/app/hooks/useCountries";
 
-const Map = dynamic(() => import("../Map"), {
-  ssr: false,
-});
-
 interface IListingInfo {
   user: TSafeUser;
   roomCount: number;
@@ -28,6 +24,9 @@ interface IListingInfo {
 }
 
 const ListingInfo: React.FC<IListingInfo> = (props) => {
+  const Map = React.useMemo(() => {
+    return dynamic(() => import("../Map"), { ssr: false });
+  }, []);
   const {
     user,
     category,
