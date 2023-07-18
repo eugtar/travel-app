@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Container, Heading } from "../components";
 import { TSafeReservation, TSafeUser } from "../types";
