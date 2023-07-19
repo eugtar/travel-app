@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { IoMdClose } from "react-icons/io";
 import Button from "../Button";
+import { IoMdClose } from "react-icons/io";
 
 interface IModalProps {
   isOpen?: boolean;

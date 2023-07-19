@@ -3,6 +3,7 @@ import Modal from ".";
 import React from "react";
 import Heading from "../Heading";
 import dynamic from "next/dynamic";
+import { formatISO } from "date-fns";
 import Counter from "../inputs/Counter";
 import { Range } from "react-date-range";
 import Calendar from "../inputs/Calendar";
@@ -10,7 +11,6 @@ import { TCountrySelectValue } from "@/app/types";
 import CountrySelect from "../inputs/CountrySelect";
 import useSearchModal from "@/app/hooks/useSearchModal";
 import { useRouter, useSearchParams } from "next/navigation";
-import { formatISO } from "date-fns";
 
 enum STEPS {
   LOCATION = 0,

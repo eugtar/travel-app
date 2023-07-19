@@ -1,5 +1,7 @@
 "use client";
+import "swiper/css";
 import React from "react";
+import "swiper/css/navigation";
 import Container from "../Container";
 import CategoryBox from "../CategoryBox";
 import { Navigation } from "swiper/modules";
@@ -7,8 +9,6 @@ import categories from "@/app/data/categories";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useBreakpoint from "@/app/hooks/useBreakpoint";
 import { usePathname, useSearchParams } from "next/navigation";
-import "swiper/css";
-import "swiper/css/navigation";
 
 const Categories: React.FC = () => {
   const params = useSearchParams();
