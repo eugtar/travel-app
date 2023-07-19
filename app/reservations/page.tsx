@@ -1,7 +1,8 @@
 import React from "react";
+import ClientOnly from "../components/ClientOnly";
+import EmptyState from "../components/EmptyState";
 import getCurrentUser from "../actions/getCurrentUser";
 import getReservations from "../actions/getReservations";
-import { ClientOnly, EmptyState } from "../components";
 import ReservationsClient from "./ReservationsClient";
 
 const ReservationsPage = async () => {

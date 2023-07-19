@@ -1,10 +1,9 @@
 import React from "react";
-import TripsClient from "./PropertiesClient";
 import PropertiesClient from "./PropertiesClient";
-import { EmptyState, ClientOnly } from "../components";
-import getCurrentUser from "../actions/getCurrentUser";
-import getReservations from "../actions/getReservations";
+import ClientOnly from "../components/ClientOnly";
+import EmptyState from "../components/EmptyState";
 import getListings from "../actions/getListings";
+import getCurrentUser from "../actions/getCurrentUser";
 
 const PropertiesPage: React.FC = async () => {
   const currentUser = await getCurrentUser();

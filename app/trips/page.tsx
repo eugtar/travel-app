@@ -1,6 +1,7 @@
 import React from "react";
 import TripsClient from "./TripsClient";
-import { EmptyState, ClientOnly } from "../components";
+import EmptyState from "../components/EmptyState";
+import ClientOnly from "../components/ClientOnly";
 import getCurrentUser from "../actions/getCurrentUser";
 import getReservations from "../actions/getReservations";
 

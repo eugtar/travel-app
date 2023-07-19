@@ -1,7 +1,8 @@
 import React from "react";
 import ListingClient from "./ListingClient";
+import EmptyState from "@/app/components/EmptyState";
+import ClientOnly from "@/app/components/ClientOnly";
 import getCurrentUser from "@/app/actions/getCurrentUser";
-import { ClientOnly, EmptyState } from "@/app/components";
 import getListingById from "@/app/actions/getListingById";
 import getReservations from "@/app/actions/getReservations";
 

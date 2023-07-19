@@ -1,12 +1,14 @@
 import "./globals.css";
 import React from "react";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import { Nunito } from "next/font/google";
+import ClientOnly from "./components/ClientOnly";
 import RentModal from "./components/modals/RentModal";
 import getCurrentUser from "./actions/getCurrentUser";
 import LoginModal from "./components/modals/LoginModal";
 import ToasterProvider from "./providers/ToasterProvider";
 import SearchModal from "./components/modals/SearchModal";
-import { ClientOnly, Footer, Navbar } from "./components";
 import RegisterModal from "./components/modals/RegisterModal";
 
 export const metadata = {

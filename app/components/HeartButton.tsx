@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { TSafeUser } from "../types";
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import useFavorite from "../hooks/useFavorite";
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
 const HeartButton: React.FC<{
   listingId: string;

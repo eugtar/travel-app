@@ -3,7 +3,8 @@ import React from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { Container, Heading } from "../components";
+import Heading from "../components/Heading";
+import Container from "../components/Container";
 import { TSafeListing, TSafeUser } from "../types";
 import ListingCard from "../components/listings/ListingCard";
 

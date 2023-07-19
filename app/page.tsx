@@ -1,8 +1,10 @@
 import React from "react";
 import { TSafeListing } from "./types";
+import Container from "./components/Container";
+import EmptyState from "./components/EmptyState";
+import ClientOnly from "./components/ClientOnly";
 import getCurrentUser from "./actions/getCurrentUser";
 import ListingCard from "./components/listings/ListingCard";
-import { ClientOnly, Container, EmptyState } from "./components";
 import getListings, { IListingsParams } from "./actions/getListings";
 
 const Home: React.FC<{ searchParams: IListingsParams }> = async ({

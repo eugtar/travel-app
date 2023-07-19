@@ -1,6 +1,7 @@
 import React from "react";
+import Heading from "../components/Heading";
+import Container from "../components/Container";
 import { TSafeListing, TSafeUser } from "../types";
-import { Container, Heading } from "../components";
 import ListingCard from "../components/listings/ListingCard";
 
 const FavoritesClient: React.FC<{
